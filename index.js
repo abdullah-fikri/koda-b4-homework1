@@ -128,8 +128,6 @@ function prosesKeranjang(){
     let total = 0
     for (let i = 0; keranjang[i] !== undefined; i++){
         total += keranjang[i].subTotal
-    }
-    for(let i = 0; keranjang[i] !== undefined; i++){
         console.log(`\n${keranjang[i].makanan} \nharga : ${keranjang[i].harga} \nquantity :  ${keranjang[i].quantity} \nSubtotal : ${keranjang[i].subTotal} \n`)
     }
     console.log(`total : ${total}`)
