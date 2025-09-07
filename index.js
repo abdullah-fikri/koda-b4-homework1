@@ -113,14 +113,14 @@ function daftarMenu(){
     }
         rl.question('\nMau yang mana? (input nomor)', (answer) => {
         answer = parseInt(answer)
-        if (answer > 11){
-            console.log('\n Data yang anda masukkan tidak sesuai \n ')
+        if (answer <= nmrMenu && answer >= 1){
+            let choice = answer - 1
+            pilihMenu(choice)
+        }else {
+            console.log('\nData yang anda masukkan tidak sesuai\n')
             daftarMenu()
         }
-        for(let i = 0; i <= answer; i++){
-           let choice =  answer - 1
-            pilihMenu(choice)
-        }
+        
     })
 }
 
